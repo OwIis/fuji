@@ -1,0 +1,286 @@
+/* ----------------------초기화--------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-bar{
+    width: 1px;
+    height: 15px;
+    background-color: gray;
+    margin: 0 10px;
+}
+.hor-bar{
+    width: 20px;
+    height: 5px;
+    background-color: black;
+}
+/* ----------시작---------- */
+.wrap{
+    width: 100%;
+}
+header{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    height: 80px;
+    position: relative;
+}
+#fujilogo{
+    width: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#fujilogo > img{
+    width: 100%;
+}
+
+.headwrapper{
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+}
+.headwrapper > div.menu-left{
+    height: 100%;
+    display: flex;
+    width: 50%;
+}
+.headwrapper > div.menu-left > nav{
+    height: 100%;
+    width: 100%;
+}
+.headwrapper > div.menu-left > nav > ul{
+    list-style: none;
+    display: flex;
+    align-items:center;
+    height: 100%;
+}
+.headwrapper > div.menu-left > nav > ul > li{
+    padding-right: 5%
+}
+.headwrapper > div.menu-right{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: end;
+}
+.headwrapper > div.menu-right > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 155px;
+}
+.headwrapper > div.menu-right > ul > li{}
+.headwrapper > div.menu-right > div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 185px;
+}
+/* 헤더 아이콘 */
+.menu-right > div:nth-child(2) > *{
+    width: 30px;
+    height: 30px;
+    margin: 16px;
+}
+
+/* 메뉴 submenu */
+.sideback{
+    display: none;
+}
+
+
+
+
+/* main시작 */
+main{}
+section#conts1{
+    width: 100%;
+    display: flex;
+    background-color: lightpink;
+    margin-bottom: 150px;
+}
+#conts1 > article.cont1-left{
+    width: 40%;
+    /* position: sticky; */
+    padding: 30px 0;
+    background-color: brown;
+}
+
+#conts1 > div.cont1-right{
+    height: 1078px;
+    width: 60%;
+    padding: 30px 50px 0 0;
+    background-color: lightgreen;
+}
+.cont1-right > div{
+    width: 50%;
+    padding: 0 0 50px 50px;
+    background-color: white;
+}
+.cont1-right > div > img{
+    width: 100%;
+}
+.cont1-right > div > div:nth-of-type(1){
+    margin: 10px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.cont1-right > div > h3{
+    margin-bottom: 10px;
+}
+.cont1-right > div > p{
+    line-height: 1.5vw;
+}
+.cont1-right > div > div > *{
+    margin-right: 10px;
+}
+/* conts1 개별 */
+.cont1-right > div:nth-child(1){
+    transform: translate(0, 0);
+}
+.cont1-right > div:nth-child(2){
+    transform: translate(465px, -438px);
+}
+.cont1-right > div:nth-child(2) div.camera{
+    display: flex;
+}
+.cont1-right > div:nth-child(2) div.camera > img{
+    width: 75px;
+}
+.cont1-right > div:nth-child(3){
+    transform: translate(0px, -680px);
+}
+.cont1-right > div:nth-child(4){
+    transform: translate(465px, -1013px);
+}
+
+
+/* 액자구역 */
+section#conts2{
+    width: 100%;
+    padding: 0 20px;
+    background-color: aquamarine;
+    display: flex;
+}
+#conts2 > div{
+    width: 33%;
+}
+#conts2 > div > div{
+    padding: 0 20px 50px;
+}
+#conts2 > div > div > img{
+    width: 100%;
+}
+#conts2 > div > div > h3{
+    margin: 10px 0 ;
+}
+#conts2 > div > div > p{
+    line-height: 1.5vw;
+}
+#conts2 > div > div > div{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#conts2 > div > div > div > *{
+    margin-right: 10px;
+}
+/* conts2 개별 */
+#conts2 > .conts2-1{}
+#conts2 > .conts2-1 > div:nth-child(1){
+    padding: 130px 20px 50px;
+}
+#conts2 > .conts2-2{}
+#conts2 > .conts2-3{}
+#conts2 > .conts2-3 > div:nth-child(1){
+    padding: 130px 20px 50px;
+}
+
+/* conts3 */
+section#conts3{
+    width: 100%;
+    height: 720px;
+    background-image: url("../images/cont3-back.jpg");
+    display: flex;
+}
+.cont3 h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+#conts3 > .cont3-left{
+    width: 40%;
+    height: 100%;
+    padding: 80px 65px 80px 80px;
+    background-color: #f7f7f7;
+}
+.cont3-left > .hor-bar{
+    width: 100%;
+}
+.cont3-left > h3{
+    padding: 45px 0 20px
+}
+.cont3-left > p{
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+.cont3-left > ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 340px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+.cont3-left > ul > li{
+    margin-bottom: 16px;
+    flex-basis: 50%;
+}
+.cont3-left > ul > li span#arrow{
+    font-family: \F128;
+}
+.conts-left > hr{}
+.cont3-left > #newmemb{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+}
+
+
+#conts3 > .cont3-right{
+    width: 60%;
+    padding: 15% 0;
+}
+#conts3 > .cont3-right > p:first-child{
+    width: 100%;
+    height: 50%;
+    background-image: url("https://fujifilm-korea.co.kr/assets/image/main/open/slogan-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#conts3 > .cont3-right > p:last-child{
+    width: 100%;
+    height: 50%;
+    background-image: url("https://fujifilm-korea.co.kr/assets/image/main/open/slogan-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* footer icons */
+.icons > *{
+    width: 20px;
+    height: 20px;
+}
+.icons > div:nth-child(1) svg{
+    fill: green
+}
